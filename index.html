@@ -10,17 +10,53 @@
 <body>
   <div class="container">
 
+    <!-- Hidden Audio -->
+    <audio id="bg-music" loop>
+      <source src="music/love-song.mp3" type="audio/mp3" />
+    </audio>
+
     <!-- Intro Card -->
     <div class="intro-card">
       <h1>Hi Love 💖</h1>
       <p>I've made something special for you.</p>
       <p>A little journey, just for us. Ready to begin?</p>
+
+      
       <br /><br />
       
       <a href="launch.html" class="btn">Take My Hand</a>
     </div>
 
   </div>
+
+  <!-- Script to Play Music -->
+  <script>
+    const startButton = document.getElementById('start-button');
+    const music = document.getElementById('bg-music');
+
+    startButton.addEventListener('click', () => {
+      music.play();
+      startButton.style.display = 'none'; // Hide the button after starting music
+    });
+  </script>
+  <script>
+  // Get the button and the audio element
+  const startButton = document.getElementById('start-button');
+  const music = document.getElementById('bg-music');
+
+  // When the user clicks the button
+  startButton.addEventListener('click', () => {
+    // Try to play the music
+    music.play()
+      .then(() => {
+        console.log('Music started playing');
+        // Hide the button after music starts
+        startButton.style.display = 'none';
+      })
+      .catch(error => {
+        console.error('Music could not play:', error);
+      });
+  });
 </script>
 
 </body>
