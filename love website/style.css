@@ -1,0 +1,121 @@
+.centered {
+  text-align: center;
+  margin-top: 20vh;
+  font-family: 'Arial', sans-serif;
+  color: #162144;
+}
+
+body {
+  background-color: #FFF; /* fallback color */
+  transition: background 0.5s;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #162144;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0f1833;
+}
+
+#title {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  font-size: 2.5em;
+  text-align: center;
+  color: #162144;
+}
+ 
+ .hearts-background {
+  background: url('images/anniversary-photo.jpg') center center fixed;
+  background-size: cover;
+  transition: background 1s ease-in-out;
+  color: white;  /* Ensures the text is visible over the photo */
+}
+
+
+
+//* Style for the flipbook title */
+.flipbook-title {
+  font-size: 2rem; /* Larger font size */
+  font-weight: bold;
+  color: #162144; /* Corrected blue text color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adding shadow for contrast */
+  text-align: center; /* Center the text */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  border-radius: 10px;
+}
+
+/* Flipbook page background */
+.flipbook-page {
+  background-color: white; /* Ensure the background is white */
+  padding: 20px; /* Optional padding for spacing inside the flipbook */
+  color: #162144; /* Text color to match the blue theme */
+}
+ 
+   /* Contact Page Background */
+.contact-page {
+  background-color: white; /* Set background color to white */
+  color: #162144; /* Text color to match your blue theme */
+  font-family: Arial, sans-serif; /* Example font, adjust if necessary */
+  padding: 20px;
+  min-height: 100vh; /* Ensure the background covers the full height */
+}
+
+/* Optional: Additional styling for the contact form */
+.contact-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f7f7f7; /* Light gray background for the form */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Form fields */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Submit button */
+.contact-form button {
+  background-color: #162144; /* Button color to match your theme */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #1a2d3d; /* Darker blue on hover */
+}
+
+/* Style for the flipbook title */
+.flipbook-title {
+  font-size: 2rem; /* Larger font size */
+  font-weight: bold;
+  color: #162164; /* Blue text color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adding shadow for contrast */
+  text-align: center; /* Center the text */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  border-radius: 10px;
+}
+
+/* Optional: Make sure the flipbook page has a clear background */
+.flipbook-page {
+  background-color: white; /* Clear white background */
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Start</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      color: #162144;
+      font-size: 32px;
+      margin-bottom: 40px;
+      animation: fadeIn 2s ease;
+    }
+
+    .start-btn {
+      padding: 14px 30px;
+      font-size: 18px;
+      background-color: #162144;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .start-btn:hover {
+      background-color: #0d1a3b;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Every love story is beautiful, but ours is my favorite. 💖</h1>
+  <button class="start-btn" onclick="window.location.href='countdown.html'">Start</button>
+</body>
+</html>
