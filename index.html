@@ -42,6 +42,26 @@
       startButton.style.display = 'none'; // Hide the button after starting music
     });
   </script>
+  <script>
+  // Get the button and the audio element
+  const startButton = document.getElementById('start-button');
+  const music = document.getElementById('bg-music');
+
+  // When the user clicks the button
+  startButton.addEventListener('click', () => {
+    // Try to play the music
+    music.play()
+      .then(() => {
+        console.log('Music started playing');
+        // Hide the button after music starts
+        startButton.style.display = 'none';
+      })
+      .catch(error => {
+        console.error('Music could not play:', error);
+      });
+  });
+</script>
+
 </body>
 </html>
 
