@@ -1,4 +1,4 @@
-const targetDate = new Date("May 07, 2025 00:00:00").getTime();
+const targetDate = new Date("April 26, 2025 00:00:00").getTime();
 const timerElement = document.getElementById("timer");
 const titleElement = document.getElementById("title");
 
