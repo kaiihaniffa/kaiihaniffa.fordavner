@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting...</title>
-  <script>
-    // Redirect to the launch page after the page loads
-    window.location.href = "launch.html";
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Love Journey</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: #162144;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .enter-button {
+      padding: 1rem 2rem;
+      background-color: #162144;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .enter-button:hover {
+      background-color: #243864;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <p>Redirecting to the launch page...</p> <!-- Optional message while redirecting -->
+  <h1>Welcome to Our Love Story</h1>
+  <p>A special journey designed with love, just for us. Ready to begin?</p>
+  <button class="enter-button" onclick="window.location.href='launch.html'">Enter</button>
+
+  <audio autoplay loop>
+    <source src="music/love-song.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
 </body>
 </html>
 
