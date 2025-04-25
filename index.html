@@ -9,18 +9,33 @@
 </head>
 <body>
   <div class="container">
-    <audio autoplay loop>
+
+    <!-- Hidden Audio -->
+    <audio id="bg-music" loop>
       <source src="music/love-song.mp3" type="audio/mp3" />
       Your browser does not support the audio element.
     </audio>
 
+    <!-- Intro Card -->
     <div class="intro-card">
       <h1>Hi Love 💖</h1>
       <p>I've made something special for you.</p>
       <p>A little journey, just for us. Ready to begin?</p>
+      <button onclick="startMusic()" class="btn">Tap to Start Music 🎶</button>
+      <br /><br />
       <a href="launch.html" class="btn">Take My Hand</a>
     </div>
+
   </div>
+
+  <!-- Script to Play Music -->
+  <script>
+    function startMusic() {
+      const music = document.getElementById('bg-music');
+      music.play();
+    }
+  </script>
 </body>
 </html>
+
 
