@@ -21,8 +21,12 @@
       <h1>Hi Love 💖</h1>
       <p>I've made something special for you.</p>
       <p>A little journey, just for us. Ready to begin?</p>
-      <button onclick="startMusic()" class="btn">Tap to Start Music 🎶</button>
+
+      <!-- Tap Button -->
+      <button id="start-button" class="btn">Tap to Start Music 🎶</button>
+      
       <br /><br />
+      
       <a href="launch.html" class="btn">Take My Hand</a>
     </div>
 
@@ -30,10 +34,13 @@
 
   <!-- Script to Play Music -->
   <script>
-    function startMusic() {
-      const music = document.getElementById('bg-music');
+    const startButton = document.getElementById('start-button');
+    const music = document.getElementById('bg-music');
+
+    startButton.addEventListener('click', () => {
       music.play();
-    }
+      startButton.style.display = 'none'; // Hide the button after starting music
+    });
   </script>
 </body>
 </html>
